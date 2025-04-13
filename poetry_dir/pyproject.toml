@@ -17,6 +17,9 @@ dependencies = [
 packages = [{include = "poetry_dir", from = "src"}]
 
 
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.6"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
