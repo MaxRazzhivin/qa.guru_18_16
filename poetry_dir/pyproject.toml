@@ -1,0 +1,22 @@
+[project]
+name = "poetry-dir"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Max_Razzhivin",email = "max.nvo06@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "selene (>=1.0.2,<2.0.0)",
+    "selenium (>=4.31.0,<5.0.0)",
+    "pytest (>=8.3.5,<9.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "poetry_dir", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
